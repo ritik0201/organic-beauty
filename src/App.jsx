@@ -215,12 +215,12 @@ function App() {
             <div className="hero-visual">
               <div className="hero-plant-container">
                 <img 
-                  src="/organic_tomatoes_cutout.jpg" 
-                  alt="Fresh Organic Vine Tomatoes" 
+                  src="/organic_asparagus.jpg" 
+                  alt="Fresh Organic Green Asparagus Stalks" 
                   className="hero-plant-img" 
                 />
                 <div className="plant-tag-badge">
-                  <span>🌱 100% Organic Heirloom Tomatoes · Satara Farm</span>
+                  <span>🌱 100% Organic Fresh Asparagus · Pune Eco Farm</span>
                 </div>
               </div>
             </div>
