@@ -7,39 +7,53 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
   return (
     <main>
       {/* Hero Section */}
-      <section className="hero" id="home">
-        <div className="hero-copy">
-          <p className="eyebrow">100% PURE BOTANICALS · CRUELTY-FREE & VEGAN</p>
-          <h1>Radiant skin begins<br />with <em>pure botanicals.</em></h1>
-          <p className="hero-text">
-            Clean, organic skincare and velvet mineral makeup crafted from cold-pressed seed elixirs, damask rose, and wild herbal extracts.
-          </p>
-          <div className="hero-actions">
-            <Link className="button button-dark" to="/fresh-products">
-              Explore Organic Beauty <span>↗</span>
-            </Link>
-            <button className="text-link" onClick={onOpenContact}>
-              Skin Advisor <span>→</span>
-            </button>
-          </div>
+      <section className="hero hero-unsplash-redesign" id="home">
+        <div className="hero-bg-overlay"></div>
+        
+        <div className="hero-content-wrap">
+          <div className="hero-copy">
+            <span className="hero-pill-tag">✦ 100% PURE BOTANICAL BEAUTY · CRUELTY-FREE & VEGAN</span>
+            <h1>Radiant skin begins<br />with <em>pure botanicals.</em></h1>
+            <p className="hero-text">
+              Clean, bio-active skincare and mineral velvet makeup crafted from cold-pressed rosehip, damask rose hydrosols, and wild herbal extracts.
+            </p>
 
-          <div className="hero-proof">
-            <div className="avatar-stack">
-              <span>A</span><span>B</span><span>S</span><span>✦</span>
+            <div className="hero-actions">
+              <Link className="button button-rose-gold" to="/fresh-products">
+                Explore Organic Store <span>↗</span>
+              </Link>
+              <Link className="button button-glass-outline" to="/farmer-support">
+                Book Skin Consultation <span>→</span>
+              </Link>
             </div>
-            <p><strong>50,000+</strong><br />glowing skins loved across India</p>
-          </div>
-        </div>
 
-        <div className="hero-visual">
-          <div className="hero-plant-container">
+            <div className="hero-proof">
+              <div className="avatar-stack">
+                <span>✦</span><span>P</span><span>R</span><span>S</span>
+              </div>
+              <p><strong>50,000+</strong><br />glowing skins loved across India</p>
+            </div>
+          </div>
+
+          <div className="hero-feature-glass-card">
+            <div className="glass-card-tag">BESTSELLER RITUAL</div>
             <img 
-              src="/aura_skincare_elixir.jpg" 
-              alt="Luna Botanicals Organic Facial Elixir" 
-              className="hero-plant-img" 
+              src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=85" 
+              alt="Rosehip Seed Botanical Glow Serum" 
+              className="glass-card-img" 
             />
-            <div className="plant-tag-badge">
-              <span>✦ Luna Botanicals Organic Rosehip Facial Elixir</span>
+            <div className="glass-card-details">
+              <h3>Rosehip Seed Glow Serum</h3>
+              <div className="glass-rating">
+                <span className="star">★</span>
+                <strong>4.95</strong>
+                <small>(248 reviews)</small>
+              </div>
+              <p>Deeply hydrates & restores natural skin glow</p>
+              <div className="glass-card-footer">
+                <span className="glass-price">₹1,250</span>
+                <Link to="/fresh-products" className="glass-shop-btn">Shop Now ↗</Link>
+              </div>
             </div>
           </div>
         </div>

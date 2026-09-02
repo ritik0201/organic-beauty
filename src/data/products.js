@@ -51,7 +51,7 @@ export const PRODUCTS = [
     unit: '50 ml bottle',
     rating: 4.98,
     reviews: 312,
-    image: 'https://images.unsplash.com/photo-1608248597359-99a36f6d5573?auto=format&fit=crop&w=800&q=85',
+    image: '/argan_jasmine_night_elixir.jpg',
     farm: 'Eco Argan Cooperative',
     harvestDate: 'First-Press Extra Extraction',
     inStock: true,
