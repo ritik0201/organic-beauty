@@ -3,8 +3,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-       <loc>https://organic-beauty.store/</loc>
-       <lastmod>2026-09-02T19:23:50+00:00</lastmod>
-       <priority>1.0000</priority>
+    <loc>https://organic-beauty.store/</loc>
+    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <priority>1.0000</priority>
+  </url>
+  <url>
+    <loc>https://organic-beauty.store/fresh-products</loc>
+    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <priority>0.9000</priority>
+  </url>
+  <url>
+    <loc>https://organic-beauty.store/our-mission</loc>
+    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
+  </url>
+  <url>
+    <loc>https://organic-beauty.store/farmer-support</loc>
+    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <priority>0.8000</priority>
   </url>
 </urlset>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { HashRouter as Router, Routes, Route, NavLink, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, NavLink, Link, useLocation } from 'react-router-dom';
 
 import './index.css';
 import HomePage from './pages/HomePage';
