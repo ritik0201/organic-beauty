@@ -132,7 +132,7 @@ function MainApp() {
       {/* Navigation */}
       <nav className="nav">
         <Link className="brand" to="/" onClick={closeMenu}>
-          <span className="brand-mark">✦</span> Organic<span>Farming</span>
+          <span className="brand-mark">✦</span> Aura<span>Botanica</span>
         </Link>
 
         <div className={`nav-links ${menuOpen ? 'is-open' : ''}`}>
@@ -150,7 +150,7 @@ function MainApp() {
             className={({ isActive }) => `nav-tab highlight-tab ${isActive ? 'active' : ''}`}
             onClick={closeMenu}
           >
-            Fresh Products <span className="badge-new">Store</span>
+            Organic Store <span className="badge-new">Beauty</span>
           </NavLink>
 
           <NavLink 
@@ -158,7 +158,7 @@ function MainApp() {
             className={({ isActive }) => `nav-tab ${isActive ? 'active' : ''}`}
             onClick={closeMenu}
           >
-            Our Mission
+            Clean Mission
           </NavLink>
 
           <NavLink 
@@ -166,11 +166,11 @@ function MainApp() {
             className={({ isActive }) => `nav-tab ${isActive ? 'active' : ''}`}
             onClick={closeMenu}
           >
-            Farmer Support
+            Skin Consultation
           </NavLink>
 
           <button className="nav-contact" onClick={() => { setContactOpen(true); closeMenu(); }}>
-            Talk to us <span>↗</span>
+            Beauty Advisor <span>↗</span>
           </button>
         </div>
 
@@ -178,9 +178,9 @@ function MainApp() {
           <button 
             className="cart-trigger-btn" 
             onClick={() => setIsCartOpen(true)}
-            aria-label="Open Shopping Basket"
+            aria-label="Open Beauty Basket"
           >
-            <span className="cart-icon">🛒</span>
+            <span className="cart-icon">🛍️</span>
             <span className="cart-label">Basket</span>
             {totalCartCount > 0 && <span className="cart-badge-count">{totalCartCount}</span>}
           </button>
@@ -221,17 +221,17 @@ function MainApp() {
       {/* Footer */}
       <footer>
         <Link className="brand" to="/" onClick={() => window.scrollTo(0, 0)}>
-          <span className="brand-mark">✦</span> Organic<span>Farming</span>
+          <span className="brand-mark">✦</span> Aura<span>Botanica</span>
         </Link>
-        <p>Better food. Better soil. Better together.</p>
+        <p>Pure Botanical Science · 100% Organic Makeup & Clean Skincare</p>
         <div>
           <Link to="/">Home</Link>
-          <Link to="/fresh-products">Fresh Store</Link>
-          <Link to="/our-mission">Our Mission</Link>
-          <Link to="/farmer-support">Farmer Support</Link>
-          <button onClick={() => setContactOpen(true)}>Contact</button>
+          <Link to="/fresh-products">Organic Store</Link>
+          <Link to="/our-mission">Clean Mission</Link>
+          <Link to="/farmer-support">Skin Consultation</Link>
+          <button onClick={() => setContactOpen(true)}>Beauty Advisor</button>
         </div>
-        <small>© 2026 Organic Farming · Fresh Produce Direct</small>
+        <small>© 2026 Aura Botanica · Organic Makeup & Botanical Skincare</small>
       </footer>
 
       {/* Contact Form Modal */}

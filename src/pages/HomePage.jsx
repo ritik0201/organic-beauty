@@ -9,46 +9,46 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-copy">
-          <p className="eyebrow">Grown with care · delivered with trust</p>
-          <h1>Good food begins<br /><em>with good soil.</em></h1>
+          <p className="eyebrow">100% PURE BOTANICALS · CRUELTY-FREE & VEGAN</p>
+          <h1>Radiant skin begins<br />with <em>pure botanicals.</em></h1>
           <p className="hero-text">
-            A simpler, direct way to buy fresh organic produce directly from independent local farmers.
+            Clean, organic skincare and velvet mineral makeup crafted from cold-pressed seed elixirs, damask rose, and wild herbal extracts.
           </p>
           <div className="hero-actions">
             <Link className="button button-dark" to="/fresh-products">
-              Explore Fresh Products <span>↗</span>
+              Explore Organic Beauty <span>↗</span>
             </Link>
             <button className="text-link" onClick={onOpenContact}>
-              I&apos;m a farmer <span>→</span>
+              Skin Advisor <span>→</span>
             </button>
           </div>
 
           <div className="hero-proof">
             <div className="avatar-stack">
-              <span>R</span><span>A</span><span>S</span><span>+</span>
+              <span>A</span><span>B</span><span>S</span><span>✦</span>
             </div>
-            <p><strong>2,400+</strong><br />local eco-growers already with us</p>
+            <p><strong>50,000+</strong><br />glowing skins loved across India</p>
           </div>
         </div>
 
         <div className="hero-visual">
           <div className="hero-plant-container">
             <img 
-              src="/organic_asparagus.jpg" 
-              alt="Fresh Organic Green Asparagus Stalks" 
+              src="/aura_skincare_elixir.jpg" 
+              alt="Luna Botanicals Organic Facial Elixir" 
               className="hero-plant-img" 
             />
             <div className="plant-tag-badge">
-              <span>🌱 100% Organic Fresh Asparagus · Pune Eco Farm</span>
+              <span>✦ Luna Botanicals Organic Rosehip Facial Elixir</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Visual Harvest Stories */}
+      {/* Botanical Extraction Stories */}
       <section className="gallery-showcase">
-        <div className="section-label">VISUAL HARVEST STORIES</div>
-        <h2>Pure, vibrant organic produce <br /><em>straight from native soil.</em></h2>
+        <div className="section-label">BOTANICAL EXTRACTION & CRAFT</div>
+        <h2>Pure, potent ingredients <br /><em>straight from nature.</em></h2>
 
         <div className="gallery-grid">
           {HOME_GALLERY.map((item, idx) => (
@@ -64,15 +64,15 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
         </div>
       </section>
 
-      {/* Seasonal Highlights Section */}
+      {/* Bestsellers Section */}
       <section className="home-produce-preview">
         <div className="section-heading">
           <div>
-            <div className="section-label">SEASONAL HIGHLIGHTS</div>
-            <h2>Fresh from today&apos;s <em>harvest.</em></h2>
+            <div className="section-label">CURATED BEAUTY FAVOURITES</div>
+            <h2>Bestselling Organic <em>Skincare & Makeup.</em></h2>
           </div>
           <Link className="under-link" to="/fresh-products">
-            View all {PRODUCTS.length} products <span>↗</span>
+            View all {PRODUCTS.length} beauty products <span>↗</span>
           </Link>
         </div>
 
@@ -92,14 +92,14 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
         </div>
       </section>
 
-      {/* Mission Band */}
+      {/* Clean Beauty Philosophy Band */}
       <section className="intro-band" id="about">
-        <div className="section-label">01 / WHY US</div>
+        <div className="section-label">01 / OUR PHILOSOPHY</div>
         <div className="intro-content">
-          <h2>From our fields<br />to your <em>table.</em></h2>
-          <p>We believe the best food has a story you can trace. We connect you with thoughtful growers, shorten the journey, and keep more of your rupee with the farmer.</p>
+          <h2>Zero parabens.<br />100% <em>clean science.</em></h2>
+          <p>We believe skincare should feed your skin, not compromise it. Every serum, tint, and mist is formulated without synthetic silicones, mineral oils, or artificial fragrances.</p>
           <Link className="under-link" to="/our-mission">
-            Read Our Full Mission <span>↗</span>
+            Read Our Clean Standard <span>↗</span>
           </Link>
         </div>
       </section>
@@ -108,10 +108,10 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
       <section className="features" id="produce">
         <div className="section-heading">
           <div>
-            <div className="section-label">02 / THE GOOD STUFF</div>
-            <h2>Grown for <em>good.</em></h2>
+            <div className="section-label">02 / WHY AURA BOTANICA</div>
+            <h2>Formulated for <em>real glow.</em></h2>
           </div>
-          <p>Small choices in the field make a big difference on your plate.</p>
+          <p>Potent botanical actives delivering visible results without irritation.</p>
         </div>
         
         <div className="feature-grid">
@@ -119,8 +119,8 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
             <div className="feature-photo feature-photo-01"></div>
             <div className="feature-overlay">
               <span>01</span>
-              <h3>Peak freshness</h3>
-              <p>Harvested when it tastes best, never when it&apos;s convenient.</p>
+              <h3>Peak Nutrient Potency</h3>
+              <p>Cold-pressed within hours of harvest to preserve active Vitamin C & essential fatty acids.</p>
             </div>
           </article>
 
@@ -128,9 +128,9 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
             <div className="feature-photo feature-photo-02"></div>
             <div className="feature-overlay">
               <span>02</span>
-              <h3>Fair by nature</h3>
-              <p>Transparent prices mean growers earn more and you know exactly where your money goes.</p>
-              <Link to="/farmer-support" className="feature-link">How it works <span>↗</span></Link>
+              <h3>Ethical Sourcing</h3>
+              <p>Fair compensation for wild floral harvesters in Kashmir & Himalayan reserves.</p>
+              <Link to="/farmer-support" className="feature-link">Consult Advisor <span>↗</span></Link>
             </div>
           </article>
 
@@ -139,29 +139,29 @@ export default function HomePage({ onAddToCart, cartItems, onQuickView, onOpenCo
             <div className="feature-overlay quote-overlay">
               <span>03</span>
               <div className="quote-mark">“</div>
-              <p className="quote">The vegetables taste like the ones my grandmother grew.</p>
-              <p className="quote-author">— Meera, Pune</p>
+              <p className="quote">My skin hasn&apos;t felt this clear, plump, and dewy in years.</p>
+              <p className="quote-author">— Ananya, Mumbai</p>
             </div>
           </article>
         </div>
       </section>
 
-      {/* Schemes section */}
+      {/* Skin Consultation Section */}
       <section className="schemes" id="schemes">
-        <div className="section-label">03 / FOR GROWERS</div>
+        <div className="section-label">03 / PERSONAL BEAUTY ADVISOR</div>
         <div className="scheme-layout">
           <div>
-            <h2>Rooted in a<br /><em>better future.</em></h2>
-            <p>Resources, fair pricing, and a community that helps independent farmers thrive.</p>
+            <h2>Find your custom<br /><em>beauty ritual.</em></h2>
+            <p>Unsure which serum or shade matches your skin type? Connect with our botanical skincare specialists for a personalized routine.</p>
             <Link className="button button-light" to="/farmer-support">
-              Join our grower network <span>↗</span>
+              Book Free Skin Consultation <span>↗</span>
             </Link>
           </div>
 
           <div className="scheme-list">
-            <div><span>01</span><strong>Fair market access</strong><p>Sell directly without the middlemen.</p></div>
-            <div><span>02</span><strong>Growing support</strong><p>Practical tools for healthier soil.</p></div>
-            <div><span>03</span><strong>Reliable community</strong><p>Grow alongside people who care.</p></div>
+            <div><span>01</span><strong>Personalized Routine</strong><p>Tailored regimen for acne, dryness, or aging.</p></div>
+            <div><span>02</span><strong>Shade Matching</strong><p>Find your exact organic velvet cheek & lip tint match.</p></div>
+            <div><span>03</span><strong>100% Satisfaction</strong><p>Dermatologically tested and hypoallergenic.</p></div>
           </div>
         </div>
       </section>

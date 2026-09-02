@@ -8,9 +8,9 @@ export default function OrderSuccessModal({ order, onClose }) {
       <div className="modal success-modal" onClick={(e) => e.stopPropagation()}>
         <div className="success-badge-icon">✦</div>
         
-        <h2>Order Confirmed!</h2>
+        <h2>Beauty Order Confirmed!</h2>
         <p className="success-subtitle">
-          Thank you, <strong>{order.customer.fullName}</strong>. Your harvest request has been sent directly to our partner organic growers.
+          Thank you, <strong>{order.customer.fullName}</strong>. Your organic skincare and clean beauty products are being freshly packed.
         </p>
 
         <div className="order-details-card">
@@ -26,13 +26,13 @@ export default function OrderSuccessModal({ order, onClose }) {
           </div>
 
           <div className="order-address-box">
-            <span>📍 Delivery Location:</span>
+            <span>📍 Shipping Location:</span>
             <p>{order.customer.address}, {order.customer.city} - {order.customer.pincode}</p>
             <p><small>Contact: {order.customer.phone}</small></p>
           </div>
 
           <div className="order-items-breakdown">
-            <h4>Harvest Summary ({order.items.length} items)</h4>
+            <h4>Beauty Order Summary ({order.items.length} items)</h4>
             {order.items.map(({ product, quantity }) => (
               <div key={product.id} className="order-item-row">
                 <div className="item-row-left">
@@ -52,9 +52,9 @@ export default function OrderSuccessModal({ order, onClose }) {
         </div>
 
         <div className="farmer-note">
-          <span className="sprout-icon">🌱</span>
+          <span className="sprout-icon">✦</span>
           <p>
-            By choosing organic, you just prevented <strong>1.2 kg</strong> of chemical pesticide runoff and directly supported local sustainable agriculture.
+            By choosing 100% organic skincare, you just supported clean cruelty-free beauty, zero synthetic parabens, and sustainable glass packaging.
           </p>
         </div>
 

@@ -27,14 +27,14 @@ export default function CartDrawer({
     setPromoSuccess('');
     
     const cleanCode = promoCode.trim().toUpperCase();
-    if (cleanCode === 'ORGANIC10') {
+    if (cleanCode === 'GLOW10' || cleanCode === 'ORGANIC10') {
       setDiscountPercent(10);
-      setPromoSuccess('10% Organic Discount Applied!');
-    } else if (cleanCode === 'FRESH50' && subtotal >= 300) {
+      setPromoSuccess('10% Beauty Discount Applied!');
+    } else if (cleanCode === 'AURA15' && subtotal >= 999) {
       setDiscountPercent(15);
-      setPromoSuccess('15% Fresh Deal Applied!');
+      setPromoSuccess('15% Botanical Deal Applied!');
     } else {
-      setPromoError('Invalid promo code. Try "ORGANIC10"');
+      setPromoError('Invalid promo code. Try "GLOW10"');
     }
   };
 
@@ -43,19 +43,19 @@ export default function CartDrawer({
       <div className="cart-drawer" onClick={(e) => e.stopPropagation()}>
         <div className="cart-header">
           <div>
-            <h3>Your Harvest Basket</h3>
-            <span className="cart-count-subtitle">{cartItems.length} item(s) selected</span>
+            <h3>Your Beauty Basket</h3>
+            <span className="cart-count-subtitle">{cartItems.length} product(s) selected</span>
           </div>
           <button className="cart-close-btn" onClick={onClose} aria-label="Close cart">×</button>
         </div>
 
         {cartItems.length === 0 ? (
           <div className="empty-cart-state">
-            <span className="empty-icon">🥬</span>
+            <span className="empty-icon">🛍️</span>
             <h4>Your basket is empty</h4>
-            <p>Explore our fresh organic harvest and support local eco-growers.</p>
+            <p>Explore our pure organic skincare and botanical velvet makeup collection.</p>
             <button className="button button-dark" onClick={onClose}>
-              Browse Fresh Products <span>↗</span>
+              Browse Beauty Products <span>↗</span>
             </button>
           </div>
         ) : (

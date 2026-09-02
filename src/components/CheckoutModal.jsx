@@ -33,7 +33,7 @@ export default function CheckoutModal({
 
     setTimeout(() => {
       setIsSubmitting(false);
-      const generatedOrderId = 'ORG-' + Math.floor(100000 + Math.random() * 900000);
+      const generatedOrderId = 'AURA-' + Math.floor(100000 + Math.random() * 900000);
       onCompleteOrder({
         orderId: generatedOrderId,
         customer: formData,
@@ -56,7 +56,7 @@ export default function CheckoutModal({
         <button className="modal-close" onClick={onClose} aria-label="Close checkout">×</button>
 
         <div className="checkout-header">
-          <p className="eyebrow">DIRECT FARM CHECKOUT</p>
+          <p className="eyebrow">CLEAN BEAUTY CHECKOUT</p>
           <h2>{step === 1 ? 'Shipping Address' : 'Payment & Delivery'}</h2>
 
           <div className="checkout-stepper">

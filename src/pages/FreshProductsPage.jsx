@@ -11,7 +11,8 @@ export default function FreshProductsPage({ onAddToCart, cartItems, onQuickView 
     const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
     const matchesSearch = product.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                           product.farm.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                          product.description.toLowerCase().includes(searchQuery.toLowerCase());
+                          product.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                          (product.tag && product.tag.toLowerCase().includes(searchQuery.toLowerCase()));
     return matchesCategory && matchesSearch;
   }).sort((a, b) => {
     if (sortBy === 'price-asc') return a.price - b.price;
@@ -24,9 +25,9 @@ export default function FreshProductsPage({ onAddToCart, cartItems, onQuickView 
     <main className="store-page">
       <header className="store-hero">
         <div className="store-hero-content">
-          <span className="eyebrow">ORGANIC FARM MARKETPLACE</span>
-          <h1>Harvest Direct <em>Fresh Products</em></h1>
-          <p>Hand-picked daily by certified organic growers. Delivered straight to your doorstep.</p>
+          <span className="eyebrow">CLEAN BEAUTY & ORGANIC COSMETICS MARKETPLACE</span>
+          <h1>Botanical Skincare & <em>Organic Makeup</em></h1>
+          <p>Potent seed oils, floral waters, and mineral cosmetics. Formulated with zero synthetic toxins.</p>
 
           {/* Search & Controls */}
           <div className="store-controls-wrap">
@@ -34,7 +35,7 @@ export default function FreshProductsPage({ onAddToCart, cartItems, onQuickView 
               <span className="search-icon">🔍</span>
               <input
                 type="text"
-                placeholder="Search organic tomatoes, avocados, raw honey, farm..."
+                placeholder="Search rosehip serum, cheek tint, argan elixir, clay mask, mist..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -50,7 +51,7 @@ export default function FreshProductsPage({ onAddToCart, cartItems, onQuickView 
                 value={sortBy}
                 onChange={(e) => setSortBy(e.target.value)}
               >
-                <option value="recommended">Featured Harvest</option>
+                <option value="recommended">Featured Beauty</option>
                 <option value="price-asc">Price: Low to High</option>
                 <option value="price-desc">Price: High to Low</option>
                 <option value="rating">Top Customer Rated</option>
@@ -77,7 +78,7 @@ export default function FreshProductsPage({ onAddToCart, cartItems, onQuickView 
       <section className="store-catalog-section">
         <div className="catalog-header">
           <p className="results-count">
-            Showing <strong>{filteredProducts.length}</strong> fresh organic product(s)
+            Showing <strong>{filteredProducts.length}</strong> organic beauty product(s)
           </p>
 
           {selectedCategory !== 'all' && (
@@ -89,8 +90,8 @@ export default function FreshProductsPage({ onAddToCart, cartItems, onQuickView 
 
         {filteredProducts.length === 0 ? (
           <div className="no-results-box">
-            <span className="no-results-icon">🥬</span>
-            <h3>No produce found matching your search</h3>
+            <span className="no-results-icon">🌸</span>
+            <h3>No beauty products found matching your search</h3>
             <p>Try searching for different keywords or explore other categories.</p>
             <button 
               className="button button-dark"

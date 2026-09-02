@@ -4,9 +4,9 @@ export default function FarmerSupportPage() {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
-    location: '',
-    cropType: 'vegetables',
-    acreage: '',
+    city: '',
+    skinConcern: 'glow-dryness',
+    routine: '',
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -20,62 +20,62 @@ export default function FarmerSupportPage() {
     <main className="farmer-page">
       <header className="page-hero farmer-hero">
         <div className="page-hero-content">
-          <span className="eyebrow">GROWER NETWORK & COMMUNITY</span>
-          <h1>Empowering Independent <em>Organic Farmers</em></h1>
+          <span className="eyebrow">PERSONAL BEAUTY ADVISOR & CONSULTATION</span>
+          <h1>Botanical Skin Consultation & <em>Custom Rituals</em></h1>
           <p>
-            Fair market pricing, practical soil health tools, and a reliable community helping independent eco-farmers thrive.
+            Unsure which serum or mineral shade best suits your skin? Speak directly with our certified organic skincare specialists.
           </p>
         </div>
       </header>
 
-      {/* Grower Support Programs */}
+      {/* Skincare Advisor Programs */}
       <section className="farmer-programs-section">
         <div className="section-heading centered">
-          <span className="section-label">HOW WE HELP GROWERS</span>
-          <h2>Rooted in <em>Farmer Success</em></h2>
+          <span className="section-label">HOW OUR ADVISORS HELP YOU</span>
+          <h2>Tailored for <em>Your Unique Skin</em></h2>
         </div>
 
         <div className="programs-grid">
           <div className="program-card">
-            <span className="program-icon">🌾</span>
-            <h3>Direct Market Access</h3>
-            <p>Sell directly to thousands of organic food lovers without paying middleman commissions or dealing with unstable mandis.</p>
+            <span className="program-icon">🌸</span>
+            <h3>Skin Type Analysis</h3>
+            <p>Identify whether your skin barrier requires hyaluronic mists, rich lipid elixirs, or clay detox treatments.</p>
           </div>
 
           <div className="program-card">
-            <span className="program-icon">🧪</span>
-            <h3>Soil Testing & Guidance</h3>
-            <p>Access free bio-soil testing kit support, organic composting blueprints, and natural pest management consultations.</p>
+            <span className="program-icon">✨</span>
+            <h3>Custom Regimen Formulation</h3>
+            <p>Get a step-by-step AM/PM skincare routine designed specifically for your skin goals and climate.</p>
           </div>
 
           <div className="program-card">
-            <span className="program-icon">💳</span>
-            <h3>Guaranteed Weekly Payouts</h3>
-            <p>Enjoy transparent weight-based pricing with direct bank transfers within 48 hours of harvest pickup.</p>
+            <span className="program-icon">💄</span>
+            <h3>Organic Shade Matching</h3>
+            <p>Find your perfect match in our non-toxic velvet lip & cheek tints and mineral sun bronzers.</p>
           </div>
 
           <div className="program-card">
-            <span className="program-icon">🚜</span>
-            <h3>Eco Equipment Assistance</h3>
-            <p>Shared community toolbanks for drip irrigation, solar drying, and certified organic seed bank distribution.</p>
+            <span className="program-icon">🍃</span>
+            <h3>Sensitive Skin Guarantee</h3>
+            <p>All products are hypoallergenic, dermatologically tested, and safe for sensitive or reactive skin types.</p>
           </div>
         </div>
       </section>
 
-      {/* Grower Registration Form Section */}
+      {/* Consultation Form Section */}
       <section className="farmer-form-section">
         <div className="farmer-form-container">
           <div className="form-info-col">
-            <span className="eyebrow">JOIN OUR NETWORK</span>
-            <h2>Are you an <em>organic grower?</em></h2>
+            <span className="eyebrow">BOOK A COMPLIMENTARY SESSION</span>
+            <h2>Talk to a <em>Skin Specialist</em></h2>
             <p>
-              Whether you cultivate 1 acre or 50 acres, we help you sell your harvest at fair prices with zero marketing hassle.
+              Fill out your details below and our botanical beauty advisor will reach out via WhatsApp or call with personalized recommendations.
             </p>
             
             <div className="farmer-perks-list">
-              <div>✓ Zero listing or registration fees</div>
-              <div>✓ Doorstep harvest pickup service</div>
-              <div>✓ Dedicated agronomist assistance</div>
+              <div>✓ 100% Free 1-on-1 Skin Consultation</div>
+              <div>✓ Complimentary Deluxe Samples with your routine</div>
+              <div>✓ Zero obligation to purchase</div>
             </div>
           </div>
 
@@ -83,21 +83,21 @@ export default function FarmerSupportPage() {
             {submitted ? (
               <div className="success-box">
                 <span className="success-star">✦</span>
-                <h3>Application Received!</h3>
-                <p>Thank you, <strong>{formData.name}</strong>. Our grower community manager will call you back at <strong>{formData.phone}</strong> within 24 hours.</p>
+                <h3>Consultation Request Sent!</h3>
+                <p>Thank you, <strong>{formData.name}</strong>. Our Senior Beauty Specialist will contact you at <strong>{formData.phone}</strong> within 24 hours.</p>
                 <button className="button button-dark" onClick={() => setSubmitted(false)}>
-                  Submit Another Inquiry
+                  Submit Another Consultation
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="grower-reg-form">
-                <h3>Grower Registration Form</h3>
+                <h3>Skin Consultation Form</h3>
                 
                 <label>
                   Full Name
                   <input
                     required
-                    placeholder="e.g. Ramesh Patil"
+                    placeholder="e.g. Priya Sharma"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   />
@@ -105,7 +105,7 @@ export default function FarmerSupportPage() {
 
                 <div className="form-row dual">
                   <label>
-                    Phone Number
+                    Phone / WhatsApp Number
                     <input
                       required
                       type="tel"
@@ -116,53 +116,53 @@ export default function FarmerSupportPage() {
                   </label>
 
                   <label>
-                    Farm Location / District
+                    City / Location
                     <input
                       required
-                      placeholder="e.g. Satara, Maharashtra"
-                      value={formData.location}
-                      onChange={(e) => setFormData({ ...formData, location: e.target.value })}
+                      placeholder="e.g. Mumbai, Delhi, Bangalore"
+                      value={formData.city}
+                      onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                     />
                   </label>
                 </div>
 
                 <div className="form-row dual">
                   <label>
-                    Primary Crops
+                    Primary Skin Concern
                     <select
-                      value={formData.cropType}
-                      onChange={(e) => setFormData({ ...formData, cropType: e.target.value })}
+                      value={formData.skinConcern}
+                      onChange={(e) => setFormData({ ...formData, skinConcern: e.target.value })}
                     >
-                      <option value="vegetables">Leafy Greens & Vegetables</option>
-                      <option value="fruits">Seasonal Fruits & Berries</option>
-                      <option value="spices">Spices & Medicinal Herbs</option>
-                      <option value="grains">Grains & Cold Pressed Oils</option>
+                      <option value="glow-dryness">Dryness & Dullness (Needs Glow)</option>
+                      <option value="acne-pores">Acne, Clogged Pores & Oiliness</option>
+                      <option value="pigmentation">Hyperpigmentation & Dark Spots</option>
+                      <option value="aging-lines">Fine Lines & Loss of Elasticity</option>
+                      <option value="shade-match">Makeup Shade Matching</option>
                     </select>
                   </label>
 
                   <label>
-                    Farm Land Size (Acres)
+                    Current Skincare Routine
                     <input
-                      required
-                      placeholder="e.g. 3 Acres"
-                      value={formData.acreage}
-                      onChange={(e) => setFormData({ ...formData, acreage: e.target.value })}
+                      placeholder="e.g. Cleanser & Sunscreen"
+                      value={formData.routine}
+                      onChange={(e) => setFormData({ ...formData, routine: e.target.value })}
                     />
                   </label>
                 </div>
 
                 <label>
-                  Message / Farming Details
+                  Specific Questions / Skin Goals
                   <textarea
                     rows="3"
-                    placeholder="Tell us what crops you are currently growing..."
+                    placeholder="Describe what you want to achieve with your skin..."
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   ></textarea>
                 </label>
 
                 <button type="submit" className="button button-dark full-width-btn">
-                  Submit Grower Application <span>↗</span>
+                  Book Free Consultation <span>↗</span>
                 </button>
               </form>
             )}
