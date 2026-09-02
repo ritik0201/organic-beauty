@@ -129,6 +129,9 @@ function MainApp() {
       <ScrollToTop />
       <ToastNotification toast={toast} onClose={() => setToast(null)} />
 
+      {/* Mobile Nav Backdrop */}
+      {menuOpen && <div className="nav-backdrop" onClick={closeMenu} />}
+
       {/* Navigation */}
       <nav className="nav">
         <Link className="brand" to="/" onClick={closeMenu}>
