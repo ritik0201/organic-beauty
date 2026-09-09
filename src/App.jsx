@@ -149,7 +149,7 @@ function MainApp() {
           </NavLink>
           
           <NavLink 
-            to="/fresh-products" 
+            to="/organic-products" 
             className={({ isActive }) => `nav-tab highlight-tab ${isActive ? 'active' : ''}`}
             onClick={closeMenu}
           >
@@ -165,7 +165,7 @@ function MainApp() {
           </NavLink>
 
           <NavLink 
-            to="/farmer-support" 
+            to="/support" 
             className={({ isActive }) => `nav-tab ${isActive ? 'active' : ''}`}
             onClick={closeMenu}
           >
@@ -208,7 +208,7 @@ function MainApp() {
           } 
         />
         <Route 
-          path="/fresh-products" 
+          path="/organic-products" 
           element={
             <FreshProductsPage 
               onAddToCart={handleAddToCart} 
@@ -218,7 +218,7 @@ function MainApp() {
           } 
         />
         <Route path="/our-mission" element={<OurMissionPage />} />
-        <Route path="/farmer-support" element={<FarmerSupportPage />} />
+        <Route path="/support" element={<FarmerSupportPage />} />
       </Routes>
 
       {/* Footer */}
@@ -229,9 +229,9 @@ function MainApp() {
         <p>Pure Botanical Science · 100% Organic Makeup & Clean Skincare</p>
         <div>
           <Link to="/">Home</Link>
-          <Link to="/fresh-products">Organic Store</Link>
+          <Link to="/organic-products">Organic Store</Link>
           <Link to="/our-mission">Clean Mission</Link>
-          <Link to="/farmer-support">Skin Consultation</Link>
+          <Link to="/support">Skin Consultation</Link>
           <button onClick={() => setContactOpen(true)}>Beauty Advisor</button>
         </div>
         <small>© 2026 Aura Botanica · Organic Makeup & Botanical Skincare</small>

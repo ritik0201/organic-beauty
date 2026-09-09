@@ -1,8 +1,0 @@
-# Robots.txt for AuraBotanica (Clean Organic Beauty & Skincare)
-# Controls search engine crawler indexation and points to XML sitemap
-
-User-agent: *
-Allow: /
-
-# Direct crawlers to the XML Sitemap
-Sitemap: https://organic-beauty.store/sitemap.xml

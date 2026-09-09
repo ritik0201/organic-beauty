@@ -4,22 +4,22 @@
 
   <url>
     <loc>https://organic-beauty.store/</loc>
-    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
     <priority>1.0000</priority>
   </url>
   <url>
-    <loc>https://organic-beauty.store/fresh-products</loc>
-    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <loc>https://organic-beauty.store/organic-products</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
     <priority>0.9000</priority>
   </url>
   <url>
     <loc>https://organic-beauty.store/our-mission</loc>
-    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
     <priority>0.8000</priority>
   </url>
   <url>
-    <loc>https://organic-beauty.store/farmer-support</loc>
-    <lastmod>2026-09-03T00:00:00+00:00</lastmod>
+    <loc>https://organic-beauty.store/support</loc>
+    <lastmod>2026-09-10T00:00:00+00:00</lastmod>
     <priority>0.8000</priority>
   </url>
 </urlset>
